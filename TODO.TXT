@@ -1,0 +1,85 @@
+
+BACKSTAGE
+	+ RecentFiles
+	+ New (take new document dialog)
+
+TEMPLATE EXPLORER
+	+ Manage New (item + folder)
+	+ Refresh, Add new, Existing
+	+ Contextual ribbon (use the gallery control ?)
+	+ Save/Load
+
+DATABASE EXPLORER
+	+ script for CREATE/ALTER/DROP
+	
+QUERY DOCUMENT
+	+ contextual ribbon
+	+ Tooltip on the status bar parts
+	+ Provider = Put queries into xml with QueryManager
+	+ Show hide the result pane, fill grid or text result, SQL completion ?
+	+ Use async SQL Reader to fill with big dataset
+	+ Add "spell check" functions
+	+ Save/Load
+
+ASSEMBLY EXPLORER
+	+ Manage refresh, Remove(buggy)
+	+ Add popup menu / Add to diagram/ new diagram
+	+ Populate on demand
+
+CONTROLS
+	new WaitControl
+	PROPERTY GRID
+		+ add toolbar with byCategory, Alphabetical, Search
+		+ add category description update - use trigger on the textbox
+		+ allow colum resize ?
+		+ add reset button
+		+ add some pre defined editors
+		+ add extension for custom editors
+
+ALL
++ Use of TPL for paralell assembly discovering
++ Improve snapshot loading with background worker thread
++ Implements Project, Settings as ChangeObject
++ Add 3 views (grid, visual, tree) to the snapshot document
++ Translate all the application
+
+visual = utiliser des itemcontrols a la place des lists sauf centre, gérer le item clic, binder le central sur la grid, 
+
++ on project toolbox, add command in context menu for delete....
++ performance/design of datagrid
++ add compressing feature on wcf
++ add https binding
++ find out why wcf server part needs admin rights, how to solve that
+
+PROJECT
+Ajouter une surveillance/test des fichiers sources+compilés+snap++++
+message et rafraichir
+
+TEST
+Trouver un soft existant NET relativement complexe pour tester
+-Console : Perso
+-Winform : Paint.net
+-Service : Perso
+-Web : Starter Kit MS 
+-WPF : BookReader ?
+
+PANEL DES SNAPSHOTS
+mode grille + comparaison
+mode treeview ou callstack
+mode visuel
+
+GRAPH_DOCUMENT
+generation d'un graphique a partir d'une view de snapshot
+les graph dependent d'un snap
+
+REPORT_DOCUMENT
+generation a partir des données d'un ou plusieurs snapshot et des graph du projets
+supprimer snapshot file et garder list of fileinfo
+associer les données au document
+http://wpfreports.codeplex.com/
+
+++++++++++++++LATER++++++++++++++
+
+VOICE COMMAND
+http://www.codeproject.com/KB/WPF/wpfdatabasemanagement.aspx
+

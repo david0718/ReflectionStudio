@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1d0a65c0-e40b-4794-8c5b-c360e7fadd99}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>Schemas</Name>
+    <RootNamespace>Schemas</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="Database.dgml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Schemas.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReflectionStudio.Core.Database.SQL2KProvider\ReflectionStudio.Core.Database.SQL2KProvider.csproj">
+      <Name>ReflectionStudio.Core.Database.SQL2KProvider</Name>
+      <Project>{e693c7e1-a6ea-41b2-bfbe-34fe8c06f065}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ReflectionStudio.Core\ReflectionStudio.Core.csproj">
+      <Name>ReflectionStudio.Core</Name>
+      <Project>{9f226445-5d57-4ca7-b60e-6c49fd62364c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
